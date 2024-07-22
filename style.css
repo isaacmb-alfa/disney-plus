@@ -35,6 +35,33 @@ nav {
     justify-content: space-between;
 }
 
+.search.activo {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2rem;
+    color: #A8A9AD;
+    background-color: #4B4E5A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.bar-search.activo {
+    display: flex;
+    width: 95%;
+}
+
+.search h2 {
+    display: none;
+}
+
+.search h2.activo {
+    font-size: 2rem;
+    display: block;
+
+}
+
 .nav {
     align-self: flex-start;
     width: 100%;

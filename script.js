@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const videos = document.querySelectorAll("video");
     let sliderInner = document.querySelector(".slider-inner");
     let images = sliderInner.querySelectorAll("img");
+    const search = document.querySelector(".search-button");
 
     let index = 0;
 
@@ -61,4 +62,16 @@ document.addEventListener("DOMContentLoaded", function () {
             video.pause();
         });
     });
+    if(search){
+
+    search.addEventListener('click', function(e){
+        const barSearch = document.querySelector(".search");
+        const barSearch2 = document.querySelector(".bar-search");
+        const titleSearch = document.querySelector(".bar-search h2");
+        console.log(barSearch, barSearch2, titleSearch);
+        barSearch.classList.toggle("activo");
+        barSearch2.classList.toggle("activo");
+        titleSearch.classList.toggle("activo");
+    });
+    }
 });
