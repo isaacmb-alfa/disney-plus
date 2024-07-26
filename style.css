@@ -399,6 +399,16 @@ video {
     }
 }
 
+@media (min-width: 1380px) {
+    .logo img {
+        margin-right: 16px;
+    }
+
+    .nav ul li {
+        padding: 15px 18px;
+    }
+}
+
 @media (min-width: 1440px) {
     .logo img {
         min-width: 75px;
